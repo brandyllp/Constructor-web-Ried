@@ -3883,6 +3883,7 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  background: #101010;
 }
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
@@ -10071,7 +10072,7 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #101010;
+  background-color: #10100;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10093,10 +10094,10 @@ img::-moz-selection {
   height: 1.5rem;
   float: left;
   position: relative;
-  left: -250px;
+  left: -100px;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
    font-family: Lato;
   color: #fff;
   letter-spacing: 0.0625em;
@@ -10119,7 +10120,7 @@ img::-moz-selection {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 4em;
+    height: 3em;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
@@ -10208,7 +10209,7 @@ color: #ffff;
   letter-spacing: 0.5px;
 
 }
-.text-mas{
+.text-mas{              /*Configuracion de textos primera y segunda seccion*/
   position: relative;
   bottom: 120px
 }
@@ -10219,6 +10220,43 @@ color: #ffff;
 .text-home-seccion-3{
   position: relative;
   bottom: 50px
+}
+.tittle-text{          /*Titulos de la segunda ventana*/
+ position: relative;
+ bottom: -120px;
+ font-weight: 400;
+}
+.prueba {
+  position: relative;
+  height: 400px;
+  bottom: 250px
+}
+.prueba1 {
+  position: relative;
+  height: 400px;
+  bottom: 200px;
+  
+}
+.text-foot{         /* Pie de textos seccion 2*/
+  position: relative;
+  bottom: 120px;
+  font-size: 27px; 
+}
+.text-functions-1{
+  position: relative;
+  bottom: 200px
+}
+.tittle-text-with-image{
+  position: relative;
+  bottom: 20px;
+  right:  20px;
+  font-weight: 400;
+}
+.tittle-text-with-image2{
+  position: relative;
+  bottom: 20px;
+  right:  12px;
+  font-weight: 400;
 }
 @media(max-width:768px){
   .text-img{
@@ -10238,6 +10276,21 @@ color: #ffff;
   bottom: 0px
 }
 .text-home-seccion-3{
+  position: relative;
+  bottom: 0px
+}
+.tittle-text{          /*Titulos de la segunda ventana*/
+ position: relative;
+ bottom: 20px;
+ font-weight: 400;
+
+}
+.text-foot{         /* Pie de textos seccion 2*/
+  position: relative;
+  bottom: 10px;
+  font-size: 12px; 
+}
+.text-functions-1{
   position: relative;
   bottom: 0px
 }
