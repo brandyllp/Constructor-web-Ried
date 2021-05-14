@@ -1,0 +1,397 @@
+/**
+* Template Name: Moderna - v4.2.0
+* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  background-color: #101010;
+}
+
+a {
+  color: #4fa6d5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #45beff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: "Roboto", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #68A4C4;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #85b6cf
+  ;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 100px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #101010;
+}
+
+#header.header-transparent {
+  background: #101010;
+  opacity: 0.8
+}
+
+#header.header-scrolled {
+  background: #101010;
+  height: 60px;
+}
+
+
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+  left: 100px
+}
+
+
+}             
+#main {
+  margin-top: 80px;
+}
+
+@media (max-width: 991px) {
+  #header .logo img {
+  content:url("../img/favicon.png");
+}
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+    font-weight: 700;
+
+}
+
+.navbar a i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+  color: #fff;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #1c3745;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #68A4C4;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(17, 38, 48, 0.9);
+  transition: 0.3s;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #101010;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+ 
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #68A4C4;
+}
+
+.navbar-mobile .getstarted {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #68A4C4;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+/**
+* Home - Homepage
+*/
+.homepage{
+
+  padding-top: 10.5rem;
+  padding-bottom: 115px;
+  text-align: center;
+  color: #fff;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.logo-home{
+  top: 200px;
+left: 514px;
+width: 372px;
+height: 148px;
+}
+.hoḿepage-heading {
+  font-size: 29px;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: font-family: 'Lato', sans-serif;
+  letter-spacing: 3.6px;
+    }
+.home-buttom {
+  padding-top: 100px
+}
+.home-buttom-android img {
+  top: 473px;
+left: 508px;
+width: 176px;
+height: 65px;
+
+ }
+.home-buttom-apple img{
+  top: 473px;
+left: 508px;
+width: 155px;
+height: 55px;
+padding-top: 10px
+
+}
+/**
+* Seccion-1 Homepage 
+*/
+.firts-paragraph-with-image div{
+ margin-top: 100px;
+ margin-bottom: 100px;
+ width: all;
+}
+.tittle-left {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-weight: bold;
+  font-stretch: condensed;
+  font-size: 34px;
+  letter-spacing: 5.1px;
+  color: #fff;
+  vertical-align: top;
+  text-align: left; 
+  line-height: 42px;
+}
+
+.paragraph-left{
+  top: 765px;
+  left: 100px;
+  width: 550px;
+  height: 149px;
+  text-align: left;
+  font: normal normal 300 20px/30px Lato;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.see-more-left{
+  top: 976px;
+  left: 100px;
+  width: 550px;
+  height: 29px;
+  text-align: left;
+  font: normal normal bold 24px/29px Lato;
+  letter-spacing: 3.6px;
+  color: #fff;
+    opacity: 1;
+}
