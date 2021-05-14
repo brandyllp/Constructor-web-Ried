@@ -358,12 +358,12 @@ padding-top: 10px
 * Seccion-1 Homepage 
 */
 .firts-paragraph-with-image div{
- margin-top: 100px;
- margin-bottom: 100px;
+ margin-top: 50px;
+ margin-bottom: 50px;
  width: all;
 }
 .tittle-left {
-  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif; font-weight:600; font-stretch:condensed;
   font-weight: bold;
   font-stretch: condensed;
   font-size: 34px;
