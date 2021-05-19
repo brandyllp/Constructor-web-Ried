@@ -1,10 +1,3 @@
-/**
-* Template Name: Moderna - v4.2.0
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -71,6 +64,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   background: #101010;
+  text-align: left;
+  font: normal normal bold 20px/24px Lato;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 #header.header-transparent {
@@ -361,6 +359,7 @@ padding-top: 10px
  margin-top: 50px;
  margin-bottom: 50px;
  width: all;
+ padding:0 
 }
 .tittle-left {
   font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif; font-weight:600; font-stretch:condensed;
@@ -378,13 +377,15 @@ padding-top: 10px
   top: 765px;
   left: 100px;
   width: 550px;
-  height: 149px;
+  height: 210px;
   text-align: left;
   font: normal normal 300 20px/30px Lato;
   letter-spacing: 3px;
   color: #fff;
+  margin: 0;
 }
-.see-more-left{
+.see-more-left {
+
   top: 976px;
   left: 100px;
   width: 550px;
@@ -393,5 +394,6 @@ padding-top: 10px
   font: normal normal bold 24px/29px Lato;
   letter-spacing: 3.6px;
   color: #fff;
-    opacity: 1;
+  opacity: 1; 
+  height: 29px
 }
