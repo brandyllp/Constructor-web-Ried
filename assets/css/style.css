@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 99999;
+  z-index: ;
   background: #68A4C4;
   width: 40px;
   height: 40px;
@@ -59,9 +59,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 100px;
+  height: 80px;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 1200;
   transition: all 0.5s;
   background: #101010;
   text-align: left;
@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 */
 .navbar {
   padding: 0;
+  margin: 0
 }
 
 .navbar ul {
@@ -320,15 +321,16 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  width: auto;
 }
-.logo-home{
+.logo-home {
   top: 200px;
 left: 514px;
 width: 372px;
 height: 148px;
 }
 .hoḿepage-heading {
-  font-size: 29px;
+  font-size: 24px;
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: font-family: 'Lato', sans-serif;
@@ -355,45 +357,60 @@ padding-top: 10px
 /**
 * Seccion-1 Homepage 
 */
-.firts-paragraph-with-image div{
- margin-top: 50px;
- margin-bottom: 50px;
- width: all;
- padding:0 
-}
-.tittle-left {
-  font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif; font-weight:600; font-stretch:condensed;
-  font-weight: bold;
-  font-stretch: condensed;
-  font-size: 34px;
-  letter-spacing: 5.1px;
-  color: #fff;
-  vertical-align: top;
-  text-align: left; 
-  line-height: 42px;
-}
 
-.paragraph-left{
-  top: 765px;
-  left: 100px;
-  width: 550px;
-  height: 210px;
-  text-align: left;
-  font: normal normal 300 20px/30px Lato;
-  letter-spacing: 3px;
-  color: #fff;
-  margin: 0;
+.container-paragraph{
+  width: 100%;
+  height: 500px;
 }
-.see-more-left {
+.container-text-left{
+ margin-top: 100px;
+ margin-bottom: 100px ;
+ width: 594px;
+ margin-left: 38px ;
 
-  top: 976px;
-  left: 100px;
-  width: 550px;
-  height: 29px;
-  text-align: left;
-  font: normal normal bold 24px/29px Lato;
-  letter-spacing: 3.6px;
-  color: #fff;
-  opacity: 1; 
-  height: 29px
+}
+.container-img-left{ 
+ margin-top: 100px;
+ margin-bottom: 100px;
+ width: 594px;
+ margin-right: 38px;
+ height: 300px;
+}
+.tittle-paragraph{
+ height: 41px;
+ font: normal normal bold 34px/42px ;
+ letter-spacing: 5.1px;
+ color: #FFFFFF;
+ opacity: 1;
+ font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif; font-weight:600; font-stretch:condensed;
+
+}
+.paragraph-text{
+ height: 210px;
+ text-align: left;
+ font: normal normal 300 20px/30px Lato;
+ letter-spacing: 3px;
+ color: #FFFFFF;
+ opacity: 1;
+}
+.see-more-paragraph{
+height: 29px
+text-align: left;
+font: normal normal bold 24px/29px Lato;
+letter-spacing: 3.6px;
+color: #FFFFFF;
+opacity: 1;
+}
+.container-text-right{
+   margin-top: 100px;
+ margin-bottom: 100px ;
+ width: 594px;
+ margin-right: 38px ;
+}
+.container-img-right{ 
+ margin-top: 100px;
+ margin-bottom: 100px;
+ width: 594px;
+ margin-left:  38px;
+ height: 300px;
 }
